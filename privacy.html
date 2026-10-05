@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư</title>
+<style>
+  :root { --bg: #f6f7fb; --card: #fff; --text: #1d2433; --muted: #5f6b80; --line: #dde2ec; --accent: #1f5fbf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11151c; --card: #1b212b; --text: #e8ecf3; --muted: #9aa6ba; --line: #2f3847; --accent: #6ea4ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  h1 { font-size: 26px; margin: 0 0 8px; }
+  h2 { font-size: 19px; margin: 24px 0 8px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Chính sách quyền riêng tư</h1>
+    <p class="muted">Ứng dụng “Thi trắc nghiệm” · Cập nhật ngày 05/10/2026 · <a href="./">Trang chủ</a></p>
+
+    <h2>1. Ai quản lý dữ liệu</h2>
+    <p>Ứng dụng do giảng viên phụ trách lớp học phần vận hành để tổ chức các bài kiểm tra trắc nghiệm. Giảng viên là người quản lý dữ liệu nêu trong chính sách này. Liên hệ: <a href="mailto:tranhieu.me@gmail.com">tranhieu.me@gmail.com</a>.</p>
+
+    <h2>2. Dữ liệu được thu thập</h2>
+    <table>
+      <tr><th>Dữ liệu</th><th>Nguồn</th><th>Mục đích</th></tr>
+      <tr><td>Địa chỉ email tài khoản Google</td><td>Đăng nhập bằng Google (chỉ quyền “xem địa chỉ email”)</td><td>Xác định người dự thi; bảo đảm mỗi tài khoản chỉ làm bài một lần</td></tr>
+      <tr><td>Họ tên, mã số sinh viên</td><td>Sinh viên tự nhập</td><td>Ghi điểm vào đúng sinh viên</td></tr>
+      <tr><td>Đề được giao, các phương án đã chọn, điểm</td><td>Quá trình làm bài</td><td>Chấm điểm và phúc khảo</td></tr>
+      <tr><td>Thời điểm bắt đầu, nộp bài; số lần và thời điểm rời khỏi trang thi, thời gian vắng mặt; số lần mở lại trang thi</td><td>Quá trình làm bài</td><td>Bảo đảm tính trung thực của bài kiểm tra</td></tr>
+    </table>
+    <p>Ứng dụng <b>không</b> đọc thư, danh bạ, lịch, tệp hay bất kỳ dữ liệu nào khác trong tài khoản Google; không dùng cookie quảng cáo; không theo dõi vị trí.</p>
+
+    <h2>3. Nơi lưu trữ</h2>
+    <p>Dữ liệu được lưu trong tệp Google Sheets thuộc tài khoản Google của giảng viên, xử lý bằng Google Apps Script. Dữ liệu không được lưu trên máy chủ nào khác.</p>
+
+    <h2>4. Chia sẻ dữ liệu</h2>
+    <p>Dữ liệu chỉ dùng cho việc tổ chức, chấm và quản lý điểm học phần. Giảng viên có thể cung cấp bảng điểm cho bộ phận đào tạo của nhà trường theo quy chế. Dữ liệu <b>không</b> được bán, không được chia sẻ cho bên thứ ba vì mục đích quảng cáo hay thương mại.</p>
+
+    <h2>5. Thời gian lưu giữ</h2>
+    <p>Dữ liệu được giữ trong thời gian cần thiết cho học phần và việc phúc khảo theo quy chế đào tạo, sau đó giảng viên xóa khỏi tệp Google Sheets.</p>
+
+    <h2>6. Quyền của sinh viên</h2>
+    <p>Sinh viên có thể liên hệ giảng viên qua email ở mục 1 để hỏi về dữ liệu của mình, đề nghị sửa thông tin sai, hoặc đề nghị xóa dữ liệu khi không còn cần cho mục đích đánh giá học phần.</p>
+
+    <h2>7. Dữ liệu người dùng từ Google</h2>
+    <p>Việc ứng dụng sử dụng thông tin nhận được từ Google API tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Chính sách dữ liệu người dùng của Google API Services</a>, bao gồm các yêu cầu về Sử dụng giới hạn (Limited Use). Địa chỉ email chỉ được dùng cho các mục đích nêu ở mục 2.</p>
+
+    <h2>English summary</h2>
+    <p class="muted">The “Thi trắc nghiệm” exam app is operated by a university lecturer. It requests only the Google email scope, used to identify exam takers and allow one attempt per account. It also stores the name and student ID entered by the student, answers, scores, timestamps and page-leave events. Data is stored only in the lecturer’s own Google Sheets via Google Apps Script, is never sold or shared for advertising, and is deleted after the course appeal period. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Contact: tranhieu.me@gmail.com.</p>
+  </div>
+</main>
+</body>
+</html>
